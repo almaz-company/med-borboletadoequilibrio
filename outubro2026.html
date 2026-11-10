@@ -338,6 +338,10 @@
 #resumo .tile .d,#instagram .tile .d{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .steps:not(.compact) .step .ctrl{min-height:7.2em;flex:none}
 #proposta-nov .tile .d{white-space:normal;font-size:11px;line-height:1.4}
+#proposta-nov .emb-steps{grid-template-columns:repeat(4,1fr) !important}
+#proposta-nov .emb-steps .step{padding:16px 18px}
+#proposta-nov .tile{padding-top:18px;padding-bottom:18px}
+@media (max-width:900px){#proposta-nov .emb-steps{grid-template-columns:1fr 1fr !important}}
 </style>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -594,21 +598,20 @@
 <section class="screen content" id="atencao">
   <div class="inner">
     <div class="kicker reveal"><span class="kn">09</span><span class="kt">Site e loja</span></div>
-    <h2 class="heading reveal d1">Comprar precisa ser fácil, no celular e no computador</h2>
-    <p class="dek reveal d1">Pontos levantados por Thiago e pelo Dr. no grupo (05 e 06/11), e como estamos tratando cada um.</p>
-    <div class="notes-cols reveal d2">
-      <div class="notes reveal">
-        <div class="note"><span class="mk">i</span><p><b>Texto da camiseta.</b> A descrição citava regata para uma camiseta. Revisão dos textos de produto.</p></div>
-        <div class="note"><span class="mk">i</span><p><b>Pacote Premium sem explicação.</b> Na compra só aparecia o preço dobrando. A página precisa mostrar o que vem no kit (caixa, papel, perfume, livreto).</p></div>
-        <div class="note"><span class="mk">i</span><p><b>Banners sem ação.</b> Os anúncios internos ("Peça exclusiva") não levavam a lugar nenhum. Cada banner precisa ter um destino.</p></div>
+    <h2 class="heading reveal d1">Ajustes do site aplicados</h2>
+    <p class="dek reveal d1">Pontos levantados por Thiago e pelo Dr. no grupo (05 e 06/11). Já estão no ar em borboletadoequilibrio.com.br.</p>
+    <div class="checklist-cols reveal d2">
+      <div class="notes compact reveal">
+        <div class="note done"><span class="mk">01</span><p><b>Texto da camiseta</b> corrigido (citava regata).</p><span class="chk done"><span class="d"></span>Aplicado</span></div>
+        <div class="note done"><span class="mk">02</span><p><b>Pacote Premium</b> agora mostra o que vem no kit.</p><span class="chk done"><span class="d"></span>Aplicado</span></div>
+        <div class="note done"><span class="mk">03</span><p><b>Banners internos</b> com destino definido.</p><span class="chk done"><span class="d"></span>Aplicado</span></div>
       </div>
-      <div class="notes reveal">
-        <div class="note"><span class="mk">i</span><p><b>Navegação no celular.</b> Revisão completa do site no mobile, com testes no PC e no celular antes de cada publicação.</p></div>
-        <div class="note"><span class="mk">i</span><p><b>Checkout.</b> Depende da ativação do PagBank. Sem isso, o tráfego não vira venda.</p></div>
-        <div class="note"><span class="mk">i</span><p><b>Contato no rodapé.</b> Usar um e-mail do domínio (contato@ ou vendas@borboletadoequilibrio.com.br) no lugar do e-mail pessoal.</p></div>
+      <div class="notes compact reveal">
+        <div class="note done"><span class="mk">04</span><p><b>Navegação no celular</b> revisada e testada no PC e no mobile.</p><span class="chk done"><span class="d"></span>Aplicado</span></div>
+        <div class="note"><span class="mk">05</span><p><b>Checkout</b> depende da ativação do PagBank.</p><span class="chk open"><span class="d"></span>Em aberto</span></div>
+        <div class="note"><span class="mk">06</span><p><b>E-mail no rodapé</b> depende da criação do e-mail do domínio.</p><span class="chk open"><span class="d"></span>Em aberto</span></div>
       </div>
     </div>
-    <p class="ads-foot reveal d3">Os ajustes estão em andamento desde 06/11. Durante esse período podem aparecer variações pontuais na Wix.</p>
   </div>
 </section>
 
@@ -623,11 +626,11 @@
       <div class="tile"><div class="v num" data-count="2" data-format="int">0</div><div class="l">publicações previstas</div><div class="d">stories com Thiago Uberreich e Patricia Costa</div></div>
       <div class="tile flag"><div class="v num" data-count="15" data-format="int">0</div><div class="l">sem retorno</div><div class="d neg">próximo passo via Dr. Rahal ou Misael</div></div>
     </div>
-    <div class="steps compact reveal d3" style="margin-top:18px">
-      <div class="step"><div class="n">01</div><h3>Reúso nos stories</h3><p>Thiago Uberreich e Patricia Costa autorizaram o reúso; publicação prevista nos stories.</p><div class="ctrl"><b>Próximo</b>Buscar o material no Drive e programar.</div></div>
-      <div class="step"><div class="n">02</div><h3>Guilherme e Andreia</h3><p>Autorizaram material passado e disseram que gravariam conteúdo novo, mas não retornaram depois da cobrança.</p><div class="ctrl"><b>Próximo</b>Usar o material antigo enquanto o novo não chega.</div></div>
-      <div class="step"><div class="n">03</div><h3>Daniel</h3><p>Repostou nos stories um vídeo do projeto em 10/11.</p><div class="ctrl"><b>Controle</b>Acompanhar alcance e seguidores a partir de 10/11.</div></div>
-      <div class="step"><div class="n">04</div><h3>Leonardo, Paola e Carla</h3><p>Leonardo recebeu o kit e falta enviar o material. O kit da Paola Vianna (Record) ainda não foi enviado. Carla Diaz não visualizou a mensagem.</p><div class="ctrl"><b>Próximo</b>Enviar o kit da Paola e cobrar o material do Leonardo via Thiago.</div></div>
+    <div class="steps compact reveal d3 emb-steps" style="margin-top:14px">
+      <div class="step"><div class="n">01</div><h3>Reúso nos stories</h3><p>Thiago Uberreich e Patricia Costa.</p><div class="ctrl"><b>Próximo</b>Buscar material no Drive e programar.</div></div>
+      <div class="step"><div class="n">02</div><h3>Guilherme e Andreia</h3><p>Material antigo autorizado; novo ainda não veio.</p><div class="ctrl"><b>Próximo</b>Usar o antigo enquanto isso.</div></div>
+      <div class="step"><div class="n">03</div><h3>Daniel</h3><p>Repostou vídeo do projeto em 10/11.</p><div class="ctrl"><b>Controle</b>Alcance e seguidores desde 10/11.</div></div>
+      <div class="step"><div class="n">04</div><h3>Leonardo, Paola, Carla</h3><p>Leo sem material; kit da Paola pendente; Carla não viu.</p><div class="ctrl"><b>Próximo</b>Enviar kit e cobrar via Thiago.</div></div>
     </div>
   </div>
 </section>
