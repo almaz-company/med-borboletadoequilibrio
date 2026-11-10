@@ -342,6 +342,11 @@
 #proposta-nov .emb-steps .step{padding:16px 18px}
 #proposta-nov .tile{padding-top:18px;padding-bottom:18px}
 @media (max-width:900px){#proposta-nov .emb-steps{grid-template-columns:1fr 1fr !important}}
+#site-acoes .acoes-notes{display:grid !important;grid-template-columns:repeat(3,1fr);max-width:none;flex:none}
+#site-acoes .acoes-notes .note{align-items:flex-start;padding:16px 18px;background:var(--card) !important;border-bottom:0 !important}
+#site-acoes .tiles{max-width:100%}
+#site-acoes .tile{padding-top:18px;padding-bottom:18px}
+@media (max-width:900px){#site-acoes .acoes-notes{grid-template-columns:1fr}}
 </style>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -470,7 +475,7 @@
       <div class="tile flag"><div class="v num">94,6%</div><div class="l">taxa de rejeição</div><div class="d neg">↑ 1%</div></div>
       <div class="tile"><div class="v num">1,0</div><div class="l">páginas por sessão</div><div class="d">estável</div></div>
     </div>
-    <div class="notes reveal d3" style="margin-top:22px">
+    <div class="notes reveal d3 acoes-notes" style="margin-top:16px">
       <div class="note"><span class="mk">i</span><p><b>Quem fica, fica mais.</b> Sessões mais longas (3m13s) mostram interesse real pelos produtos.</p></div>
       <div class="note"><span class="mk">i</span><p><b>A maioria sai sem navegar.</b> 94,6% de rejeição e 1 página por sessão: a loja precisa conduzir a pessoa até o kit e o checkout.</p></div>
       <div class="note"><span class="mk">i</span><p><b>Pagamento: PagBank definido.</b> Wise, Inter e C6 não funcionam como intermediadores na Wix. Próximo passo: ativar e fazer compra-teste ponta a ponta.</p></div>
