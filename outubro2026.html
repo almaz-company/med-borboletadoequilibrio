@@ -347,6 +347,17 @@
 #site-acoes .tiles{max-width:100%}
 #site-acoes .tile{padding-top:18px;padding-bottom:18px}
 @media (max-width:900px){#site-acoes .acoes-notes{grid-template-columns:1fr}}
+#proposta-nov .emb-talk{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:14px;flex:none}
+#proposta-nov .talk-col{background:var(--card);border:1px solid var(--line);padding:12px 20px}
+#proposta-nov .talk-h{font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--fg-dim);margin-bottom:6px}
+#proposta-nov .talk-row{display:flex;justify-content:space-between;align-items:center;padding:6px 0;border-top:1px solid var(--line);font-size:13.5px;color:var(--fg)}
+#proposta-nov .talk-row:first-of-type{border-top:0}
+#proposta-nov .tf{font-size:10px;line-height:1.2;letter-spacing:.14em;text-transform:uppercase;color:var(--pos,#3ecf8e);border:1px solid currentColor;padding:3px 9px;white-space:nowrap}
+#proposta-nov .tf.warn{color:var(--neg,#ff6b5b)}
+#proposta-nov .talk-note{font-size:12px;color:var(--fg-faint);margin-top:10px;line-height:1.5}
+#proposta-nov .tile{padding-top:14px !important;padding-bottom:14px !important}
+#proposta-nov .tile .v{font-size:clamp(28px,3vw,40px) !important}
+@media (max-width:900px){#proposta-nov .emb-talk{grid-template-columns:1fr}}
 </style>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -626,16 +637,26 @@
     <h2 class="heading reveal d1">Reativação: 20 contatos, 5 com retorno</h2>
     <p class="dek reveal d1">Planilha de controle de reativação, atualizada em 10/11. Contatos feitos em 29/09 e 15/10, pelo direct.</p>
     <div class="tiles reveal d2" style="flex:none">
-      <div class="tile"><div class="v num" data-count="4" data-format="int">0</div><div class="l">autorizaram reúso de material</div><div class="d pos">Thiago Uberreich, Patricia Costa, Guilherme Berenguer, Andreia Zampolli</div></div>
-      <div class="tile"><div class="v num" data-count="1" data-format="int">0</div><div class="l">repostou vídeo do projeto</div><div class="d pos">Daniel, nos stories em 10/11</div></div>
-      <div class="tile"><div class="v num" data-count="2" data-format="int">0</div><div class="l">publicações previstas</div><div class="d">stories com Thiago Uberreich e Patricia Costa</div></div>
-      <div class="tile flag"><div class="v num" data-count="15" data-format="int">0</div><div class="l">sem retorno</div><div class="d neg">próximo passo via Dr. Rahal ou Misael</div></div>
+      <div class="tile"><div class="v num" data-count="5" data-format="int">0</div><div class="l">materiais autorizados</div><div class="d pos">prontos para reutilizar</div></div>
+      <div class="tile"><div class="v num" data-count="1" data-format="int">0</div><div class="l">reels</div><div class="d">Andreia Zampoli</div></div>
+      <div class="tile"><div class="v num" data-count="4" data-format="int">0</div><div class="l">stories</div><div class="d">Patrícia, Thiago, Daniel, Guilherme</div></div>
+      <div class="tile flag"><div class="v num" data-count="2" data-format="int">0</div><div class="l">pontos de cobrança</div><div class="d neg">Leonardo e Paola</div></div>
     </div>
-    <div class="steps compact reveal d3 emb-steps" style="margin-top:14px">
-      <div class="step"><div class="n">01</div><h3>Reúso nos stories</h3><p>Thiago Uberreich e Patricia Costa.</p><div class="ctrl"><b>Próximo</b>Buscar material no Drive e programar.</div></div>
-      <div class="step"><div class="n">02</div><h3>Guilherme e Andreia</h3><p>Material antigo autorizado; novo ainda não veio.</p><div class="ctrl"><b>Próximo</b>Usar o antigo enquanto isso.</div></div>
-      <div class="step"><div class="n">03</div><h3>Daniel</h3><p>Repostou vídeo do projeto em 10/11.</p><div class="ctrl"><b>Controle</b>Alcance e seguidores desde 10/11.</div></div>
-      <div class="step"><div class="n">04</div><h3>Leonardo, Paola, Carla</h3><p>Leo sem material; kit da Paola pendente; Carla não viu.</p><div class="ctrl"><b>Próximo</b>Enviar kit e cobrar via Thiago.</div></div>
+    <div class="emb-talk reveal d3">
+      <div class="talk-col">
+        <div class="talk-h">Reutilização de materiais autorizados</div>
+        <div class="talk-row"><span class="tn">Andreia Zampoli</span><span class="tf">Reels</span></div>
+        <div class="talk-row"><span class="tn">Patrícia Costa</span><span class="tf">Stories</span></div>
+        <div class="talk-row"><span class="tn">Thiago Uberreich</span><span class="tf">Stories</span></div>
+        <div class="talk-row"><span class="tn">Cantor Daniel</span><span class="tf">Stories</span></div>
+        <div class="talk-row"><span class="tn">Guilherme Berenguer</span><span class="tf">Stories</span></div>
+      </div>
+      <div class="talk-col">
+        <div class="talk-h">Pontos de cobrança</div>
+        <div class="talk-row"><span class="tn">Leonardo Miggiorin</span><span class="tf warn">Retorno de material</span></div>
+        <div class="talk-row"><span class="tn">Paola Vianna</span><span class="tf warn">Status de envio do kit</span></div>
+        <p class="talk-note">Os outros 15 contatos seguem sem retorno; o próximo passo é via Dr. Rahal ou Misael.</p>
+      </div>
     </div>
   </div>
 </section>
