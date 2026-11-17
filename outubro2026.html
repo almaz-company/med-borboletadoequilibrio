@@ -358,6 +358,13 @@
 #proposta-nov .tile{padding-top:14px !important;padding-bottom:14px !important}
 #proposta-nov .tile .v{font-size:clamp(28px,3vw,40px) !important}
 @media (max-width:900px){#proposta-nov .emb-talk{grid-template-columns:1fr}}
+#paginas .pg-grid{display:grid;grid-template-columns:minmax(220px,1fr) 2.2fr;gap:28px;align-items:center;flex:none}
+#paginas .pg-tiles{display:grid !important;grid-template-columns:1fr !important;flex:none}
+#paginas .pg-bars .source-row{padding:4px 0;grid-template-columns:130px 1fr 120px !important}
+#paginas .pg-bars .val{text-align:right;white-space:nowrap}
+@media (max-width:900px){#paginas .pg-grid{grid-template-columns:1fr}}
+#paginas .tile{padding-top:10px !important;padding-bottom:10px !important}
+#paginas .tile .v{font-size:clamp(26px,2.6vw,38px) !important}
 </style>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -390,6 +397,7 @@
   <button data-target="instagram"><span class="dot"></span></button>
   <button data-target="site"><span class="dot"></span></button>
   <button data-target="site-acoes"><span class="dot"></span></button>
+  <button data-target="paginas"><span class="dot"></span></button>
   <button data-target="ads"><span class="dot"></span></button>
   <button data-target="conteudo"><span class="dot"></span></button>
   <button data-target="proximos"><span class="dot"></span></button>
@@ -494,9 +502,32 @@
   </div>
 </section>
 
+<section class="screen content" id="paginas">
+  <div class="inner">
+    <div class="kicker reveal"><span class="kn">05</span><span class="kt">Páginas mais vistas</span></div>
+    <h2 class="heading reveal d1">O site inteiro está sendo explorado</h2>
+    <p class="dek reveal d1">Google Analytics, visualizações por página nos últimos 7 dias (até 17/11), comparado aos 7 dias anteriores.</p>
+    <div class="pg-grid"><div class="tiles reveal d2 pg-tiles">
+      <div class="tile"><div class="v num" data-count="377" data-format="int">0</div><div class="l">visualizações nas 7 páginas</div><div class="d pos">todas em alta</div></div>
+      <div class="tile"><div class="v num" data-count="86" data-format="int">0</div><div class="l">visualizações da loja</div><div class="d pos">↑ 75,5%</div></div>
+      <div class="tile"><div class="v num">8x</div><div class="l">página Envolva-se</div><div class="d pos">↑ 700%</div></div>
+    </div>
+    <div class="sources reveal d3 pg-bars">
+<div class="source-row" style="--w:100%"><div class="name">Home</div><div class="track"><div class="fill"></div></div><div class="val"><b class="num">130</b> <span class="pos">↑176,6%</span></div></div>
+<div class="source-row" style="--w:66%"><div class="name">Loja</div><div class="track"><div class="fill"></div></div><div class="val"><b class="num">86</b> <span class="pos">↑75,5%</span></div></div>
+<div class="source-row" style="--w:41%"><div class="name">Quem Somos</div><div class="track"><div class="fill"></div></div><div class="val"><b class="num">53</b> <span class="pos">↑341,7%</span></div></div>
+<div class="source-row" style="--w:37%"><div class="name">Envolva-se</div><div class="track"><div class="fill"></div></div><div class="val"><b class="num">48</b> <span class="pos">↑700,0%</span></div></div>
+<div class="source-row" style="--w:19%"><div class="name">A Causa</div><div class="track"><div class="fill"></div></div><div class="val"><b class="num">25</b> <span class="pos">↑400,0%</span></div></div>
+<div class="source-row" style="--w:15%"><div class="name">Contatos</div><div class="track"><div class="fill"></div></div><div class="val"><b class="num">20</b> <span class="pos">↑150,0%</span></div></div>
+<div class="source-row" style="--w:12%"><div class="name">Kit Camiseta Masc.</div><div class="track"><div class="fill"></div></div><div class="val"><b class="num">15</b> <span class="pos">↑36,4%</span></div></div>
+    </div>
+    </div>
+    <p class="ads-foot reveal d3">Quem Somos, A Causa e Envolva-se cresceram mais que a loja: o visitante quer conhecer a história antes de comprar.</p>
+  </div>
+</section>
 <section class="screen content" id="ads">
   <div class="inner">
-    <div class="kicker reveal"><span class="kn">05</span><span class="kt">Campanhas pagas</span></div>
+    <div class="kicker reveal"><span class="kn">06</span><span class="kt">Campanhas pagas</span></div>
     <h2 class="heading reveal d1">Mídia paga a serviço do reconhecimento</h2>
     <p class="dek reveal d1">Em 11/10 a direção ficou clara: acelerar o reconhecimento da marca, com meta de 10 mil seguidores e depois 50 mil.</p>
     <div class="ads-grid reveal d2">
@@ -525,7 +556,7 @@
 
 <section class="screen content" id="conteudo">
   <div class="inner">
-    <div class="kicker reveal"><span class="kn">06</span><span class="kt">Conteúdo em destaque</span></div>
+    <div class="kicker reveal"><span class="kn">07</span><span class="kt">Conteúdo em destaque</span></div>
     <h2 class="heading reveal d1">O que mais performou em outubro</h2>
     <p class="dek reveal d1">Os 3 conteúdos com maior alcance do mês.</p>
     <div class="preview-grid reveal d2">
@@ -573,7 +604,7 @@
 
 <section class="screen content" id="proximos">
   <div class="inner">
-    <div class="kicker reveal"><span class="kn">07</span><span class="kt">Próximos passos</span></div>
+    <div class="kicker reveal"><span class="kn">08</span><span class="kt">Próximos passos</span></div>
     <h2 class="heading reveal d1">Foco de novembro: o quê, e como controlamos</h2>
     <p class="dek reveal d1">Para cada frente, onde vamos agir e como vamos acompanhar se está funcionando.</p>
     <div class="steps reveal d2">
@@ -587,7 +618,7 @@
 
 <section class="screen content" id="checklist">
   <div class="inner">
-    <div class="kicker reveal"><span class="kn">08</span><span class="kt">Checklist operacional</span></div>
+    <div class="kicker reveal"><span class="kn">09</span><span class="kt">Checklist operacional</span></div>
     <h2 class="heading reveal d1">8 de 12 concluídos</h2>
     <p class="dek reveal d1">Itens de execução de outubro, atualizados em 10/11.</p>
     <div class="checklist-cols reveal d2">
@@ -613,7 +644,7 @@
 
 <section class="screen content" id="atencao">
   <div class="inner">
-    <div class="kicker reveal"><span class="kn">09</span><span class="kt">Site e loja</span></div>
+    <div class="kicker reveal"><span class="kn">10</span><span class="kt">Site e loja</span></div>
     <h2 class="heading reveal d1">Ajustes do site aplicados</h2>
     <p class="dek reveal d1">Pontos levantados por Thiago e pelo Dr. no grupo (05 e 06/11). Já estão no ar em borboletadoequilibrio.com.br.</p>
     <div class="checklist-cols reveal d2">
@@ -633,7 +664,7 @@
 
 <section class="screen content" id="proposta-nov">
   <div class="inner">
-    <div class="kicker reveal"><span class="kn">10</span><span class="kt">Embaixadores</span></div>
+    <div class="kicker reveal"><span class="kn">11</span><span class="kt">Embaixadores</span></div>
     <h2 class="heading reveal d1">Reativação: 20 contatos, 5 com retorno</h2>
     <p class="dek reveal d1">Planilha de controle de reativação, atualizada em 10/11. Contatos feitos em 29/09 e 15/10, pelo direct.</p>
     <div class="tiles reveal d2" style="flex:none">
@@ -663,7 +694,7 @@
 
 <section class="screen content" id="pauta">
   <div class="inner">
-    <div class="kicker reveal"><span class="kn">11</span><span class="kt">Pauta da reunião · 11/11</span></div>
+    <div class="kicker reveal"><span class="kn">12</span><span class="kt">Pauta da reunião · 11/11</span></div>
     <h2 class="heading reveal d1">Pontos parados que precisam de decisão</h2>
     <p class="dek reveal d1">Itens sem resposta no grupo. Cada um tem um responsável do lado da Borboleta.</p>
     <div class="notes compact reveal d2" style="max-width:none">
